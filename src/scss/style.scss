@@ -1,4 +1,58 @@
-body {
-  color: #7fffd4;
-  background-color: brown;
+.input {
+  display: block;
+  width: 17rem;
+  margin: 0.3rem;
+  border: 1px solid silver;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.left-panel {
+  &__numbers {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.1rem;
+    border: 2px solid silver;
+    outline-width: 0;
+  }
+}
+
+.right-panel {
+  &__operators {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.1rem;
+    border: 2px solid silver;
+    outline-width: 0;
+
+    &--big-button {
+      height: 6.1rem;
+    }
+
+    &--clear {
+      background-color: lightsalmon;
+    }
+
+    &--result {
+      background-color: lightskyblue;
+      height: 6.1rem;
+    }
+  }
+}
+
+button:hover {
+  border-color: gray;
+}
+
+button:active {
+  font-weight: bold;
+  background-color: silver;
+}
+
+.panel {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.3rem;
 }
