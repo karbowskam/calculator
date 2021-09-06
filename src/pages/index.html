@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://pagecdn.io/lib/mathjs/7.0.1/math.min.js"></script>
   </head>
-  <body>
-    <h1>Hello world!</h1>
+  <body class="body">
+    <div class="calculator">
+      <input class="input" type="text" id="input" />
+      <div class="panel">
+        <div class="left-panel">
+          <button class="left-panel__numbers">7</button>
+          <button class="left-panel__numbers">8</button>
+          <button class="left-panel__numbers">9</button>
+        </div>
+        <div class="left-panel">
+          <button class="left-panel__numbers">4</button>
+          <button class="left-panel__numbers">5</button>
+          <button class="left-panel__numbers">6</button>
+        </div>
+        <div class="left-panel">
+          <button class="left-panel__numbers">1</button>
+          <button class="left-panel__numbers">2</button>
+          <button class="left-panel__numbers">3</button>
+        </div>
+        <div class="left-panel">
+          <button class="left-panel__numbers">0</button>
+          <button class="left-panel__numbers">00</button>
+          <button class="left-panel__numbers">.</button>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="right-panel">
+          <button class="right-panel__operators">/</button>
+          <button class="right-panel__operators right-panel__operators--clear">c</button>
+        </div>
+        <div class="right-panel">
+          <button class="right-panel__operators">*</button>
+          <button class="right-panel__operators">-</button>
+        </div>
+        <div class="right-panel">
+          <button class="right-panel__operators right-panel__operators--big-button">+</button>
+          <button class="right-panel__operators right-panel__operators--result result-js">=</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
