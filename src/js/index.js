@@ -1,4 +1,7 @@
 import "../scss/style.scss";
+import { create, all } from "mathjs";
+
+const math = create(all,  {});
 
 window.onload = function () {
   calculator.init();
